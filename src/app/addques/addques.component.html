@@ -1,0 +1,62 @@
+<html><head>
+
+</head>
+<body>
+  <button type="submit" class="btn btn-info" routerLink='/home' (click)=SignOut()>Logout </button> <br/>
+<br/>
+  <form [formGroup]="ADD" (ngSubmit)="onSubmit(ADD.value)">
+    <div class="jumbotron">
+    <div class="container">  <br><br>
+
+        <label for="Subject_name">SUBJECT:</label>
+  <select id="Subject_name" name="Subject_name" formControlName="Subject_name">
+    <option value="Java">Java</option>
+    <option value="C">C</option>
+    <option value="HTML">HTML</option>
+   
+  </select>     <br><br> 
+
+
+
+  <label for="Level_Id">LEVEL:</label>
+  <select id="Level_Id" name="Level_Id" formControlName="Level_Id">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+   
+  </select>     <br><br>
+       
+
+
+
+
+
+    <label for="Question">
+            QUESTION: 
+                <input type="text" name="Question" formControlName="Question"> 
+    </label><br><br>
+
+
+    <label for="op1">Option 1:</label>
+            <input type="text" name="op1" formControlName="op1"> 
+<br><br>
+
+
+<label for="op2">Option 2: </label>
+  <input type="text" name= "op2" formControlName="op2"><br><br>
+
+
+  <label for="op3">Option 3: </label>
+  <input type="text" name="op3" formControlName="op3"><br><br>
+
+
+  <label for="op4">Option 4: </label>
+  <input type="text" name="op4" formControlName="op4"><br><br>
+
+
+  <input type="submit" value="Submit">
+    </div>
+</div>
+</form>
+</body>
+</html>
